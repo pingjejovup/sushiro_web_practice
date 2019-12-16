@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700|Noto+Serif+TC:400,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <style>
+        body {
+            background: #eee;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v5.0">
+    </script>
+    <div class="top_img">
+        <img src="./img/素材/logo.png" alt="logo">
+        <img src="./img/素材/hand.png" alt="hand">
+        <img src="./img/素材/character01.png" alt="">
+        <img src="./img/bgimg/bg02.png" alt="">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light " id="navbar">
+        <div class="container d-flex justify-content-center ">
+            <a class="navbar-brand" href="#"><img src="./img/素材/logo.png" alt="logo" width="60px"></a>
+            <!-- 漢堡條 -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+                <ul class="navbar-nav justify-content-around">
+                    <li class="nav-item ">
+                        <img src="./img/素材/icon_news.svg" alt="logo_news" height="35px">
+                        <a class="nav-link" href="#">最新消息<br>News<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="./img/素材/icon_sushiro.svg" alt="icon_sushi" width="28px">
+                        <a class="nav-link" href="#">關於我們<br>About</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="./img/素材/icon_sushi.svg" alt="icon_sushi" height="35px">
+                        <a class="nav-link" href="#">美味壽司<br>Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="./img/素材/icon_iphone.svg" alt="icon_iphone" height="35px">
+                        <a class="nav-link" href="#">媒體資訊<br>Media</a>
+                    </li>
+                    <li class="nav-item ">
+                        <img src="./img/素材/icon_location.svg" alt="icon_location" height="35px">
+                        <a class="nav-link" href="#">各地資訊<br>Location</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <section>
+
+    </section>
+    <section>
+        <div class="newsArea">
+            <div class="banner" id="banner">
+                <!-- Swiper -->
+                <div class="swiper-container container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/bgimg/01.jpg" alt="" width="100%"></div>
+                        <div class="swiper-slide"><img src="./img/bgimg/02.jpg" alt="" width="100%"></div>
+                        <div class="swiper-slide"><img src="./img/bgimg/03.jpg" alt="" width="100%"></div>
+                        <div class="swiper-slide"><img src="./img/bgimg/04.jpg" alt="" width="100%"></div>
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="container g_news">
+                <h2>最新消息</h2>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="news_img"></div>
+                            <div class="text">AAAADDD</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg_yellow"><img class="mid_img" src="./img/素材/character02.png" alt=""></div>
+        </div>
+        <div class="box"></div>
+    </section>
+    <section>
+        <div class="aboutArea">
+
+            <div class="container">
+                <h2>我們的信念</h2>
+                <h4>讓每個人在壽司郎都能吃到讓胃和心靈皆得到滿足</h4>
+                <div class="row">
+                    <div class="col-6 about_text">
+                        <h4>好吃的壽司郎</h4>
+                        <p>我們以驚喜的價格，讓所有顧客吃到高級美味的壽司</p>
+                        <hr>
+                        <h4>安心的壽司郎</h4>
+                        <p>我們嚴格把關食材，提供顧客安全新鮮的佳餚</p>
+                        <hr>
+                        <h4>誠摯的壽司郎</h4>
+                        <p>我們用心的環境清潔以及誠摯以待的客戶服務</p>
+                    </div>
+                    <div class="col-6"><img src="./img/bgimg/about_img.jpg" alt="" width="100%"></div>
+                </div>
+            </div>
+            <!-- <div class="charactor"><img src="./img/素材/character03.png" alt="" width="200px"></div> -->
+        </div>
+    </section>
+    <section>
+        <div class="bg_img">
+
+            <div class="slogan">
+                <h5>成立自1984年......</h5>來自大阪的日本第一迴轉壽司品牌
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="menuArea">
+            <div id="menu_img" class="menu_img bg img1">
+                <div class="container">
+                    <h2>MENU</h2>
+                </div>
+            </div>
+            <div class="wrap_btn">
+                <div class="container">
+                    <div class="row">
+                        <div class="btn b1 active"><img src="./img/素材/甜蝦.png" alt="">
+                            <p>握壽司</p>
+                        </div>
+                        <div class="btn b2"><img src="./img/素材/極上鰻魚.png" alt="">
+                            <p>高級握壽司</p>
+                        </div>
+                        <div class="btn b3"><img src="./img/素材/飛魚卵.png" alt="">
+                            <p>軍艦</p>
+                        </div>
+                        <div class="btn b4"><img src="./img/素材/茶碗蒸.png" alt="">
+                            <p>副餐</p>
+                        </div>
+                        <div class="btn b5"><img src="./img/素材/嫩布丁.png" alt="">
+                            <p>甜點‧飲料</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="mediaArea">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="title">FACEBOOK</div>
+                        <div class="box">
+                            <div class="fb-page" data-href="https://www.facebook.com/Sushiro.TW/" data-tabs="timeline"
+                                data-width="" data-height="400" data-small-header="true" data-adapt-container-width="true"
+                                data-hide-cover="false" data-show-facepile="true">
+                                <blockquote cite="https://www.facebook.com/Sushiro.TW/" class="fb-xfbml-parse-ignore"><a
+                                        href="https://www.facebook.com/Sushiro.TW/">台湾スシロー 台灣壽司郎</a></blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="title">壽司郎專屬預約APP</div>
+                        <div class="box"><img src="./img/bgimg/app_info.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container"></div>
+        </div>
+    </section>
+
+    <!-- 我是Javascript分隔線 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script>
+        // NavBar sticky effect
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+
+
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+
+            } else {
+                navbar.classList.remove("sticky");
+
+            }
+        }
+    </script>
+    <script>
+        $(".btn").click(function () {
+            $(".btn").removeClass('active')
+            $(this).addClass('active')
+
+            var index = $(this).index()
+            $('#menu_img').removeClass("img1 img2 img3 img4 img5");
+            $('#menu_img').addClass(`img${index+1}`);
+
+            // console.log(`img${index+1}`);
+        })
+    </script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            // slidesPerView: 1,
+            // spaceBetween: 30,
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
