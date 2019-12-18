@@ -1,4 +1,5 @@
 * {
+  scroll-behavior: smooth;
   font-family: 'Noto Sans TC', sans-serif, 'Noto Serif TC', serif;
 }
 
@@ -44,7 +45,7 @@ nav.sticky {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 99999;
 }
 
 .sticky + .banner {
@@ -73,7 +74,7 @@ nav.sticky {
 }
 
 #navbar .navbar-nav .nav-item:hover {
-  background-color: #f5ac0a;
+  background-color: #fbe43a;
   border-radius: 5px;
 }
 
@@ -107,7 +108,6 @@ section .newsArea .banner {
 
 section .newsArea .banner .swiper-container {
   width: 100%;
-  height: 467px;
   margin-left: auto;
   margin-right: auto;
   border: #b72027 3px solid;
@@ -118,7 +118,7 @@ section .newsArea .banner .swiper-container .swiper-button-next {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L5%2C44l-4.2-4.2L18.6%2C22L0.8%2C4.2L5%2C0z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
   border-radius: 50px 0 0 50px;
   padding: 20px 3px 20px 20px;
-  right: 0px;
+  right: -5px;
   left: auto;
 }
 
@@ -131,7 +131,7 @@ section .newsArea .banner .swiper-container .swiper-button-prev {
   border-radius: 0 50px 50px 0;
   padding: 20px 20px 20px 3px;
   right: auto;
-  left: 0px;
+  left: -5px;
 }
 
 section .newsArea .banner .swiper-container .swiper-button-prev::after {
@@ -194,7 +194,7 @@ section .newsArea .g_news {
 
 section .newsArea .g_news .card {
   height: 215px;
-  background-color: #f5ac0a;
+  background-color: #fbe43a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -431,12 +431,12 @@ section .newsArea .bg_yellow .mid_img {
   border: #b72027 2px solid;
 }
 
-.mediaArea .col-4,
-.mediaArea .col-8 {
+#mediaArea .col-4,
+#mediaArea .col-8 {
   position: relative;
 }
 
-.mediaArea .title {
+#mediaArea .title {
   position: absolute;
   background-color: #b72027;
   padding: 6px 15px;
@@ -449,13 +449,13 @@ section .newsArea .bg_yellow .mid_img {
           transform: translateX(-50%);
 }
 
-.mediaArea .box {
+#mediaArea .box {
   margin: 150px auto;
   height: 434px;
   width: 90%;
 }
 
-.mediaArea .box img {
+#mediaArea .box img {
   width: 100%;
 }
 
@@ -463,6 +463,31 @@ footer {
   width: 100%;
   height: 150px;
   background-color: #b72027;
+}
+
+footer .top_btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fbe43a;
+  border: #FFF solid 3px;
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  opacity: 0;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  text-align: center;
+}
+
+footer .top_btn img {
+  margin-top: 6px;
+}
+
+footer .fadeIn {
+  opacity: 1;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 footer p {

@@ -119,7 +119,7 @@ a.toggle-info span.right {
 
 
 .lct_card-actions a:active {
-    color: rgb(122, 233, 233);
+    color: #FFF;
     z-index: 999;
 }
 

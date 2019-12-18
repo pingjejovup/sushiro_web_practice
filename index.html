@@ -17,11 +17,9 @@
         body {
             background: #eee;
             margin: 0;
-            padding:0px;
+            padding: 0px;
             scroll-behavior: smooth;
         }
-
-       
     </style>
 </head>
 
@@ -185,27 +183,24 @@
         </div>
     </section>
     <section id="mediaArea">
-        <div class="mediaArea">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="title">FACEBOOK</div>
-                        <div class="box">
-                            <div class="fb-page" data-href="https://www.facebook.com/Sushiro.TW/" data-tabs="timeline"
-                                data-width="" data-height="400" data-small-header="true"
-                                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                                <blockquote cite="https://www.facebook.com/Sushiro.TW/" class="fb-xfbml-parse-ignore"><a
-                                        href="https://www.facebook.com/Sushiro.TW/">台湾スシロー 台灣壽司郎</a></blockquote>
-                            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="title">FACEBOOK</div>
+                    <div class="box">
+                        <div class="fb-page" data-href="https://www.facebook.com/Sushiro.TW/" data-tabs="timeline"
+                            data-width="" data-height="400" data-small-header="true" data-adapt-container-width="true"
+                            data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/Sushiro.TW/" class="fb-xfbml-parse-ignore"><a
+                                    href="https://www.facebook.com/Sushiro.TW/">台湾スシロー 台灣壽司郎</a></blockquote>
                         </div>
                     </div>
-                    <div class="col-8">
-                        <div class="title">壽司郎專屬預約APP</div>
-                        <div class="box"><img src="./img/bgimg/app_info.jpg" alt=""></div>
-                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="title">壽司郎專屬預約APP</div>
+                    <div class="box"><img src="./img/bgimg/app_info.jpg" alt=""></div>
                 </div>
             </div>
-            <div class="container"></div>
         </div>
     </section>
     <section id="locationArea">
@@ -214,9 +209,12 @@
             <div class="location_cards">
             </div>
         </div>
-       
+
     </section>
     <footer>
+       <a href="#" id="gotop"><div class="top_btn" id="top_btn"><img src="./img/素材/arrow.png" alt="" width="70%"></div></a>
+           
+        
         <p>Copyright© 僅做為學習用途</p>
     </footer>
 
@@ -225,8 +223,24 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
-
     <script src="./Js/location.js"></script>
+    <script>
+    // top按鍵
+        $(function () {       
+            $('#gotop').click(function () {
+                $('html,body').animate({
+                    scrollTop: 0 }, 700);
+            });
+            $(window).scroll(function () {
+                // console.log(this.scrollY)
+                if ($(this).scrollTop() > 1500) {
+                    $('#top_btn').addClass("fadeIn");                  
+                } else {
+                    $('#top_btn').removeClass("fadeIn");                  
+                }
+            }).scroll();
+        });
+    </script>
     <script>
         $(document).ready(function () {
             var zindex = 10;

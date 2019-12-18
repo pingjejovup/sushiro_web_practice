@@ -1,9 +1,11 @@
 $red:rgb(183, 32, 39);
 $yellow:rgb(251, 228, 58);
 $black:#222;
-$btn-color:rgb(245, 172, 10);
+$btn-color:rgb(251, 228, 58);
+// 橘色 rgb(245, 172, 10)
 
 * {
+    scroll-behavior: smooth;
     font-family: 'Noto Sans TC', sans-serif, 'Noto Serif TC', serif;
 }
 
@@ -51,7 +53,7 @@ nav.sticky {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 99999;
 
 }
 
@@ -62,6 +64,7 @@ nav.sticky {
 #navbar {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.479);
     padding: 2px;
+    
 
     .navbar-nav {
         width: 100%;
@@ -112,22 +115,23 @@ section {
             top: 60px;
             left: 50%;
             transform: translateX(-50%);
+           
 
 
             .swiper-container {
                 width: 100%;
-                height: 467px;
                 margin-left: auto;
                 margin-right: auto;
                 border: $red 3px solid;
                 border-radius: 30px;
 
 
+
                 .swiper-button-next {
                     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L5%2C44l-4.2-4.2L18.6%2C22L0.8%2C4.2L5%2C0z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
                     border-radius: 50px 0 0 50px;
                     padding: 20px 3px 20px 20px;
-                    right: 0px;
+                    right: -5px;
                     left: auto;
 
                     &::after {
@@ -141,7 +145,7 @@ section {
                     border-radius: 0 50px 50px 0;
                     padding: 20px 20px 20px 3px;
                     right: auto;
-                    left: 0px;
+                    left: -5px;
 
                     &::after {
                         content: "";
@@ -439,7 +443,7 @@ section {
     }
 }
 
-.mediaArea {
+#mediaArea {
 
     .col-4,
     .col-8 {
@@ -471,14 +475,32 @@ section {
 }
 
 
-
-
-
 footer {
     width: 100%;
     height: 150px;
     background-color: $red;
-
+    .top_btn{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: $btn-color;
+        border: #FFF solid 3px;
+        position: fixed;
+        right: 50px;
+        bottom: 100px;
+        opacity: 0;
+        transition: 0.7s;
+        text-align: center;
+        img{
+           margin-top: 6px;
+        }
+       
+        
+    }
+    .fadeIn{
+        opacity: 1;
+        transition: 0.7s;
+    }
     p {
         color: #FFF;
         text-align: center;
