@@ -431,7 +431,8 @@ section .newsArea .bg_yellow .mid_img {
   border: #b72027 2px solid;
 }
 
-.mediaArea .col-4, .mediaArea .col-8 {
+.mediaArea .col-4,
+.mediaArea .col-8 {
   position: relative;
 }
 
@@ -468,5 +469,6 @@ footer p {
   color: #FFF;
   text-align: center;
   line-height: 150px;
+  margin: 0;
 }
 /*# sourceMappingURL=index.css.map */

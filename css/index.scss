@@ -104,7 +104,7 @@ section {
         background-repeat: no-repeat;
         background-image: url(../img/bgimg/house_png-06-06.png);
         background-attachment: fixed;
-        
+
         .banner {
             margin-top: 200px;
             background-color: transparent;
@@ -112,7 +112,7 @@ section {
             top: 60px;
             left: 50%;
             transform: translateX(-50%);
-            
+
 
             .swiper-container {
                 width: 100%;
@@ -207,24 +207,26 @@ section {
                 background-color: $btn-color;
                 display: flex;
                 flex-direction: row;
-                background-color:#FFF;
+                background-color: #FFF;
                 box-shadow: 0 0 10px #DDD;
                 align-items: center;
 
                 .news_img {
                     width: 50%;
                     height: 100%;
-                   
+
                 }
-                .text{
+
+                .text {
                     padding: 0px 20px;
                     position: relative;
-                    &::before{
+
+                    &::before {
                         content: "More";
                         position: absolute;
                         padding: 4px 4px;
                         line-height: 20px;
-                        background-color:$red;
+                        background-color: $red;
                         color: #FFF;
                         right: 20px;
                         bottom: 0;
@@ -245,7 +247,7 @@ section {
             background-position: top;
             background-size: cover;
             position: relative;
-            
+
 
             .mid_img {
                 width: 60%;
@@ -347,47 +349,48 @@ section {
 }
 
 .menuArea {
-        .menu_img {
-            width: 100%;
-            height: 450px;
-            position: relative;
-            h2{
-                position: absolute;
-                top: 20px;
-            }
-        }
+    .menu_img {
+        width: 100%;
+        height: 450px;
+        position: relative;
 
-        .bg {
-            background-position: bottom 0px left 50% ;
-            background-size: 600px;
-            background-repeat: no-repeat;
+        h2 {
+            position: absolute;
+            top: 20px;
         }
+    }
 
-        .img1 {
-            background-image: url(../img/bgimg/MENU01.jpg);
-            background-color: rgb(255, 244, 92);
-        }
+    .bg {
+        background-position: bottom 0px left 50%;
+        background-size: 600px;
+        background-repeat: no-repeat;
+    }
 
-        .img2 {
-            background-image: url(../img/bgimg/MENU02.jpg);
-            background-color: rgb(207, 231, 205);
-        }
+    .img1 {
+        background-image: url(../img/bgimg/MENU01.jpg);
+        background-color: rgb(255, 244, 92);
+    }
 
-        .img3 {
-            background-image: url(../img/bgimg/MENU03.jpg);
-            background-color: rgb(248, 176, 190);
-        }
+    .img2 {
+        background-image: url(../img/bgimg/MENU02.jpg);
+        background-color: rgb(207, 231, 205);
+    }
 
-        .img4 {
-            background-image: url(../img/bgimg/MENU04.jpg);
-            background-color: rgb(241, 89, 66);
-        }
+    .img3 {
+        background-image: url(../img/bgimg/MENU03.jpg);
+        background-color: rgb(248, 176, 190);
+    }
 
-        .img5 {
-            background-image: url(../img/bgimg/MENU05.jpg);
-            background-color: rgb(30, 121, 174);
-        }
-    
+    .img4 {
+        background-image: url(../img/bgimg/MENU04.jpg);
+        background-color: rgb(241, 89, 66);
+    }
+
+    .img5 {
+        background-image: url(../img/bgimg/MENU05.jpg);
+        background-color: rgb(30, 121, 174);
+    }
+
 
     .wrap_btn {
         background-color: #FFF;
@@ -400,7 +403,7 @@ section {
 
 
             .row {
-                padding: 10px 0 0 0 ;
+                padding: 10px 0 0 0;
                 display: flex;
                 justify-content: space-around;
 
@@ -420,7 +423,8 @@ section {
                         left: 50%;
                         transform: translateX(-50%);
                     }
-                    img{
+
+                    img {
                         width: 60px;
                     }
                 }
@@ -435,10 +439,13 @@ section {
     }
 }
 
-.mediaArea{
-    .col-4,.col-8{
+.mediaArea {
+
+    .col-4,
+    .col-8 {
         position: relative;
     }
+
     .title {
         position: absolute;
         background-color: $red;
@@ -451,24 +458,32 @@ section {
         transform: translateX(-50%);
 
     }
-    .box{
-        margin: 150px auto ;
+
+    .box {
+        margin: 150px auto;
         height: 434px;
         width: 90%;
-        img{
+
+        img {
             width: 100%;
         }
     }
 }
-footer{
+
+
+
+
+
+footer {
     width: 100%;
     height: 150px;
     background-color: $red;
 
-    p{
-    color: #FFF;
-    text-align: center;
-    line-height: 150px;
+    p {
+        color: #FFF;
+        text-align: center;
+        line-height: 150px;
+        margin: 0;
 
     }
 }

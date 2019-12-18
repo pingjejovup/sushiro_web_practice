@@ -12,12 +12,16 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700|Noto+Serif+TC:400,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/location.css">
     <style>
         body {
             background: #eee;
             margin: 0;
-            padding: 0;
+            padding:0px;
+            scroll-behavior: smooth;
         }
+
+       
     </style>
 </head>
 
@@ -44,23 +48,23 @@
                 <ul class="navbar-nav justify-content-around">
                     <li class="nav-item ">
                         <img src="./img/素材/icon_news.svg" alt="logo_news" height="35px">
-                        <a class="nav-link" href="#">最新消息<br>News<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#banner">最新消息<br>News<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <img src="./img/素材/icon_sushiro.svg" alt="icon_sushi" width="28px">
-                        <a class="nav-link" href="#">關於我們<br>About</a>
+                        <a class="nav-link" href="#aboutArea">關於我們<br>About</a>
                     </li>
                     <li class="nav-item">
                         <img src="./img/素材/icon_sushi.svg" alt="icon_sushi" height="35px">
-                        <a class="nav-link" href="#">美味壽司<br>Menu</a>
+                        <a class="nav-link" href="#menuArea">美味壽司<br>Menu</a>
                     </li>
                     <li class="nav-item">
                         <img src="./img/素材/icon_iphone.svg" alt="icon_iphone" height="35px">
-                        <a class="nav-link" href="#">媒體資訊<br>Media</a>
+                        <a class="nav-link" href="#mediaArea">媒體資訊<br>Media</a>
                     </li>
                     <li class="nav-item ">
                         <img src="./img/素材/icon_location.svg" alt="icon_location" height="35px">
-                        <a class="nav-link" href="#">各地資訊<br>Location</a>
+                        <a class="nav-link" href="#locationArea">各地資訊<br>Location</a>
                     </li>
                 </ul>
             </div>
@@ -95,15 +99,22 @@
                     <div class="col-6">
                         <div class="card">
                             <div class="news_img"><img src="./img/bgimg/news.jpg" alt="" height="100%"></div>
-                            <div class="text"><h6>2019 Oct 20</h6><h4>TRICK OR SUSHI</h4>
-                            <p>壽司郎HappyHalloween期間活動，在FB分享官方貼文，即可獲得萌抱壽司Halloween特別版貼紙一張....</p></div>
+                            <div class="text">
+                                <h6>2019 Oct 20</h6>
+                                <h4>TRICK OR SUSHI</h4>
+                                <p>壽司郎HappyHalloween期間活動，在FB分享官方貼文，即可獲得萌抱壽司Halloween特別版貼紙一張....</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="card"><div class="news_img"><img src="./img/bgimg/news.jpg" alt="" height="100%"></div>
-                        <div class="text"><h6>2019 Oct 20</h6><h4>TRICK OR SUSHI</h4>
-                        <p>壽司郎HappyHalloween期間活動，在FB分享官方貼文，即可獲得萌抱壽司Halloween特別版貼紙一張....</p></div>
-                   </div>
+                        <div class="card">
+                            <div class="news_img"><img src="./img/bgimg/news.jpg" alt="" height="100%"></div>
+                            <div class="text">
+                                <h6>2019 Oct 20</h6>
+                                <h4>TRICK OR SUSHI</h4>
+                                <p>壽司郎HappyHalloween期間活動，在FB分享官方貼文，即可獲得萌抱壽司Halloween特別版貼紙一張....</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -112,7 +123,7 @@
         </div>
         <div class="box"></div>
     </section>
-    <section>
+    <section id="aboutArea">
         <div class="aboutArea">
 
             <div class="container">
@@ -143,7 +154,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="menuArea">
         <div class="menuArea">
             <div id="menu_img" class="menu_img bg img1">
                 <div class="container">
@@ -173,7 +184,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="mediaArea">
         <div class="mediaArea">
             <div class="container">
                 <div class="row">
@@ -181,8 +192,8 @@
                         <div class="title">FACEBOOK</div>
                         <div class="box">
                             <div class="fb-page" data-href="https://www.facebook.com/Sushiro.TW/" data-tabs="timeline"
-                                data-width="" data-height="400" data-small-header="true" data-adapt-container-width="true"
-                                data-hide-cover="false" data-show-facepile="true">
+                                data-width="" data-height="400" data-small-header="true"
+                                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
                                 <blockquote cite="https://www.facebook.com/Sushiro.TW/" class="fb-xfbml-parse-ignore"><a
                                         href="https://www.facebook.com/Sushiro.TW/">台湾スシロー 台灣壽司郎</a></blockquote>
                             </div>
@@ -197,14 +208,79 @@
             <div class="container"></div>
         </div>
     </section>
+    <section id="locationArea">
+        <div class="container">
+            <h2>各地資訊</h2>
+            <div class="location_cards">
+            </div>
+        </div>
+       
+    </section>
     <footer>
         <p>Copyright© 僅做為學習用途</p>
     </footer>
+
 
     <!-- 我是Javascript分隔線 -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
+
+    <script src="./Js/location.js"></script>
+    <script>
+        $(document).ready(function () {
+            var zindex = 10;
+
+            $("div.lct_card").click(function (e) {
+                // e.preventDefault();
+                console.log($(this));
+
+
+                var isShowing = false;
+
+                if ($(this).hasClass("show")) {
+                    isShowing = true
+                }
+
+                if ($("div.location_cards").hasClass("showing")) {
+                    // a card is already in view
+                    $("div.lct_card.show")
+                        .removeClass("show");
+
+                    if (isShowing) {
+                        // this card was showing - reset the grid
+                        $("div.location_cards")
+                            .removeClass("showing");
+                    } else {
+                        // this card isn't showing - get in with it
+                        $(this)
+                            .css({
+                                zIndex: zindex
+                            })
+                            .addClass("show");
+
+                    }
+
+                    zindex++;
+
+                } else {
+                    // no location_cards in view
+                    $("div.location_cards")
+                        .addClass("showing");
+                    $(this)
+                        .css({
+                            zIndex: zindex
+                        })
+                        .addClass("show");
+
+                    zindex++;
+                }
+
+            });
+        });
+    </script>
+
+
     <script>
         // NavBar sticky effect
         window.onscroll = function () {
