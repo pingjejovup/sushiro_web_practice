@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <style>
+        body {
+            background-color: #ccc;
+        }
+        .box{
+            width: 100%;
+            height: 60vh;
+            border: 2px solid firebrick;
+            background-color: gold;
+            background-image: url(./img/bgimg/MENU03.jpg);
+            background-size: 80%;
+            background-repeat: no-repeat;
+            background-position: left 30px top 10px;
+        }
+        
+      
+    </style>
+</head>
+
+<body>
+   <div class="box"></div>
+   <h3>SSSDDD</h3>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.1.0.min.js"
+        integrity="sha256-ycJeXbll9m7dHKeaPbXBkZH8BuP99SmPm/8q5O+SbBc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.container').slick({
+                dots: true,
+                centerMode: true,
+                arrows: true,
+                slidesToShow: 1,
+                autoplay:true
+            });
+        });
+        // $('.single-item').slick();
+    </script>
+
+</body>
+
+</html>
