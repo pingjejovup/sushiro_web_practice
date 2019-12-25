@@ -30,6 +30,7 @@
 }
 
 .top_img img:nth-child(3) {
+  width: 50vw;
   position: absolute;
   left: 10%;
   bottom: 4vh;
@@ -94,6 +95,14 @@ section .newsArea {
   background-repeat: no-repeat;
   background-image: url(../img/bgimg/house_png-06-06.png);
   background-attachment: fixed;
+  border: darkred 3px dashed;
+}
+
+@media (max-width: 576px) {
+  section .newsArea {
+    padding-top: 200px;
+    height: 900px;
+  }
 }
 
 section .newsArea .banner {
@@ -106,12 +115,26 @@ section .newsArea .banner {
           transform: translateX(-50%);
 }
 
+@media (max-width: 576px) {
+  section .newsArea .banner {
+    margin-top: 50px;
+    width: 100%;
+  }
+}
+
 section .newsArea .banner .swiper-container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   border: #b72027 3px solid;
   border-radius: 30px;
+}
+
+@media (max-width: 576px) {
+  section .newsArea .banner .swiper-container {
+    border: none;
+    border-radius: 0px;
+  }
 }
 
 section .newsArea .banner .swiper-container .swiper-button-next {
@@ -145,6 +168,15 @@ section .newsArea .banner .swiper-container .swiper-button-prev {
   background-repeat: no-repeat;
   border: #b72027 10px solid;
   background-color: #b72027;
+  outline: none;
+}
+
+@media (max-width: 576px) {
+  section .newsArea .banner .swiper-container .swiper-button-next,
+  section .newsArea .banner .swiper-container .swiper-button-prev {
+    border: transparent 10px solid;
+    background-color: transparent;
+  }
 }
 
 section .newsArea .banner .swiper-container .swiper-slide {
@@ -177,6 +209,13 @@ section .newsArea .banner .swiper-pagination-bullets .swiper-pagination-bullet {
   outline: none;
 }
 
+@media (max-width: 576px) {
+  section .newsArea .banner .swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+}
+
 section .newsArea .banner .swiper-pagination-bullets .swiper-pagination-bullet-active {
   background-color: #b72027;
   opacity: 1;
@@ -192,8 +231,13 @@ section .newsArea .g_news {
   z-index: 2;
 }
 
+@media (max-width: 576px) {
+  section .newsArea .g_news {
+    top: 350px;
+  }
+}
+
 section .newsArea .g_news .card {
-  height: 215px;
   background-color: #fbe43a;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,14 +254,30 @@ section .newsArea .g_news .card {
           align-items: center;
 }
 
-section .newsArea .g_news .card .news_img {
-  width: 50%;
-  height: 100%;
+@media (max-width: 576px) {
+  section .newsArea .g_news .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+  }
+}
+
+section .newsArea .g_news .card .news_img, section .newsArea .g_news .card img {
+  width: 100%;
 }
 
 section .newsArea .g_news .card .text {
   padding: 0px 20px;
   position: relative;
+}
+
+@media (max-width: 576px) {
+  section .newsArea .g_news .card .text {
+    width: 100%;
+    padding: 15px;
+  }
 }
 
 section .newsArea .g_news .card .text::before {
@@ -231,15 +291,28 @@ section .newsArea .g_news .card .text::before {
   bottom: 0;
 }
 
+@media (max-width: 576px) {
+  section .newsArea .g_news .card .text::before {
+    bottom: 10px;
+  }
+}
+
 section .newsArea .bg_yellow {
   width: 100%;
-  height: 150vh;
+  height: 120vh;
   background-color: transparent;
-  margin-top: 300px;
+  top: 300px;
   background-image: url(../img/bgimg/bg-yellow.svg);
   background-position: top;
   background-size: cover;
   position: relative;
+}
+
+@media (max-width: 576px) {
+  section .newsArea .bg_yellow {
+    top: 550px;
+    height: 250px;
+  }
 }
 
 section .newsArea .bg_yellow .mid_img {
@@ -251,12 +324,20 @@ section .newsArea .bg_yellow .mid_img {
           transform: translate(-50%, -50%);
 }
 
+@media (max-width: 576px) {
+  section .newsArea .bg_yellow .mid_img {
+    top: 150px;
+  }
+}
+
 .box {
   width: 100%;
   height: 100vh;
+  border: goldenrod 2px solid;
 }
 
 .aboutArea {
+  clear: both;
   width: 100%;
   height: 100vh;
   background-color: #EEE;
@@ -276,18 +357,18 @@ section .newsArea .bg_yellow .mid_img {
   margin: 0;
 }
 
-.aboutArea .col-6 {
+.aboutArea .col-lg-6 {
   margin-top: 50px;
   font-size: 20px;
 }
 
-.aboutArea .col-6 p {
+.aboutArea .col-lg-6 p {
   color: #555;
   letter-spacing: 2px;
   margin-bottom: 0px;
 }
 
-.aboutArea .col-6 img {
+.aboutArea .col-lg-6 img {
   border-radius: 30px;
 }
 

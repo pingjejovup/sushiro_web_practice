@@ -37,6 +37,7 @@ $btn-color:rgb(251, 228, 58);
     }
 
     img:nth-child(3) {
+        width: 50vw;
         position: absolute;
         left: 10%;
         bottom: 4vh;
@@ -97,6 +98,10 @@ nav.sticky {
 section {
 
     .newsArea {
+        @media (max-width: 576px) {
+            padding-top: 200px;
+            height: 900px;
+         }
         padding-top: 600px;
         width: 100%;
         height: 1200px;
@@ -107,8 +112,13 @@ section {
         background-repeat: no-repeat;
         background-image: url(../img/bgimg/house_png-06-06.png);
         background-attachment: fixed;
+        border: darkred 3px dashed;
 
         .banner {
+            @media (max-width: 576px) {
+                margin-top:50px;
+                width: 100%;
+             }
             margin-top: 200px;
             background-color: transparent;
             position: absolute;
@@ -119,13 +129,15 @@ section {
 
 
             .swiper-container {
+                @media (max-width: 576px) {
+                    border: none;
+                    border-radius: 0px;
+                }
                 width: 100%;
                 margin-left: auto;
                 margin-right: auto;
                 border: $red 3px solid;
                 border-radius: 30px;
-
-
 
                 .swiper-button-next {
                     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L5%2C44l-4.2-4.2L18.6%2C22L0.8%2C4.2L5%2C0z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
@@ -154,11 +166,16 @@ section {
 
                 .swiper-button-next,
                 .swiper-button-prev {
+                    @media (max-width: 576px) {
+                    border:transparent 10px solid;
+                    background-color: transparent;
+                    }
                     cursor: pointer;
                     background-position: center;
                     background-repeat: no-repeat;
                     border: $red 10px solid;
                     background-color: $red;
+                    outline: none;
                 }
 
 
@@ -180,6 +197,10 @@ section {
             .swiper-pagination-bullets {
 
                 .swiper-pagination-bullet {
+                    @media (max-width: 576px) {
+                        width: 10px;
+                        height: 10px;
+                    }
                     width: 15px;
                     height: 15px;
                     margin: 8px 6px;
@@ -200,14 +221,21 @@ section {
         }
 
         .g_news {
+            @media (max-width: 576px) {
+                top: 350px;     
+            }
             position: absolute;
             top: 800px;
             left: 50%;
             transform: translateX(-50%);
             z-index: 2;
-
             .card {
-                height: 215px;
+                // height: 215px;
+                @media (max-width: 576px) {
+                    flex-direction:column;
+                    width: 70%;
+                }
+               
                 background-color: $btn-color;
                 display: flex;
                 flex-direction: row;
@@ -215,13 +243,17 @@ section {
                 box-shadow: 0 0 10px #DDD;
                 align-items: center;
 
-                .news_img {
-                    width: 50%;
-                    height: 100%;
-
+                .news_img,img{
+                    width: 100%;
+                    
                 }
 
                 .text {
+                    @media (max-width: 576px) {
+                        width: 100%;
+                        padding: 15px;
+                          
+                    }  
                     padding: 0px 20px;
                     position: relative;
 
@@ -234,7 +266,9 @@ section {
                         color: #FFF;
                         right: 20px;
                         bottom: 0;
-
+                        @media (max-width: 576px) {
+                            bottom: 10px;
+                        }  
                     }
                 }
             }
@@ -243,17 +277,26 @@ section {
 
 
         .bg_yellow {
+            @media (max-width: 576px) {
+                top: 550px;
+                height: 250px;
+            }
             width: 100%;
-            height: 150vh;
+            height: 120vh;
             background-color: transparent;
-            margin-top: 300px;
+            top: 300px;
             background-image: url(../img/bgimg/bg-yellow.svg);
             background-position: top;
             background-size: cover;
             position: relative;
+            
+            
 
 
             .mid_img {
+                @media (max-width: 576px) {
+                    top: 150px;
+                }
                 width: 60%;
                 position: absolute;
                 top: 75vh;
@@ -269,9 +312,11 @@ section {
 .box {
     width: 100%;
     height: 100vh;
+    border:goldenrod 2px solid;
 }
 
 .aboutArea {
+    clear: both;
     width: 100%;
     height: 100vh;
     background-color: #EEE;
@@ -290,7 +335,7 @@ section {
         margin: 0;
     }
 
-    .col-6 {
+    .col-lg-6 {
         margin-top: 50px;
         font-size: 20px;
 
